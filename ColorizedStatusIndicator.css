@@ -45,16 +45,16 @@
 
 	/*** Colorisation des groupes et du bot système ***/
 		.notAppAsidePanel_a3002d {
-			.dm__972a0:has(.subtext__972a0) .name__20a53>div,	/* Colonne des conversations (groupes et bot système) */
-			.children__9293f:not(:has(rect,[class*="tab"]))							/* En-tête des conversations */
-			:is(span>div>div:nth-child(2),div>h1>span:first-child),								/* ... Groupe / Bot système */
-			[class*="user-profile"]>div:has([aria-label="discord"])								/* Aperçu de profil et profil complet (bot système) */
-			:is(.nickname__63ed3,.username__05e81)						/* ... Nom / Description */
+			.dm__972a0:has(.subtext__972a0) .name__20a53>div,														/* Colonne des conversations (groupes et bot système) */
+			.children__9293f:not(:has(rect,[class*="tab"]))															/* En-tête des conversations */
+			:is(span>div>div:nth-child(2),div>h1>span:first-child),													/* ... Groupe / Bot système */
+			[class*="user-profile"]>div:has([aria-label="discord"])													/* Aperçu de profil et profil complet (bot système) */
+			:is(.nickname__63ed3,.username__05e81)																	/* ... Nom / Description */
 			{color:var(--Groulor)!important}
 			
 			.dm__972a0:has(.subtext__972a0) 
 			{
-				&:has(.status_a423bd,[mask*="typing"],rect)							/* Groupe avec deux avatars : ".status_a423bd,[mask*="typing"]" / groupe avec image personnalisée : "rect" */
+				&:has(.status_a423bd,[mask*="typing"],rect)															/* Groupe avec deux avatars : ".status_a423bd,[mask*="typing"]" / groupe avec image personnalisée : "rect" */
 				{
 					:is(.wrapper__44b0c,.container__1ce5d)::before {
 						top:-5%;
@@ -74,11 +74,11 @@
 	/*** Remplacement de l'indicateur de statut ***/
 			/* Cas particulier */
 		/** Récupération du statut **/
-		.user-profile-sidebar>div>div:not(:has([aria-label="discord"]))							/* Colonne d'aperçu de profil de conversation privée : "usernameRow__63ed3" et "userTag__63ed3" */
+		.user-profile-sidebar>div>div:not(:has([aria-label="discord"]))												/* Colonne d'aperçu de profil de conversation privée : "usernameRow__63ed3" et "userTag__63ed3" */
 		{
 			&:has(.header__7f9c0 rect:is([fill="#43a25a"],[fill="#45a366"],[mask*="online"])) {--Status:#43a25a}
-			&:has(.header__7f9c0 rect:is([fill="#ca9654"],[fill="#ffc04e"],[mask*="idle"])) {--Status:#ca9654}				/* Problème lorsque l'on déplie les amis en commun */
-			&:has(.header__7f9c0 rect:is([fill="#d83a42"],[fill="#da3e44"],[mask*="dnd"])) {--Status:#d83a42}			/* Le parent du statut et du pseudo a aussi pour fils les amis en commun */
+			&:has(.header__7f9c0 rect:is([fill="#ca9654"],[fill="#ffc04e"],[mask*="idle"])) {--Status:#ca9654}		/* Problème lorsque l'on déplie les amis en commun */
+			&:has(.header__7f9c0 rect:is([fill="#d83a42"],[fill="#da3e44"],[mask*="dnd"])) {--Status:#d83a42}		/* Le parent du statut et du pseudo a aussi pour fils les amis en commun */
 			&:has(.header__7f9c0 rect:is([fill="#82838b"],[fill="#84858d"],[mask*="offline"])) {--Status:#82838b}
 			&:has(.header__7f9c0 rect:is([fill="#9147ff"],[fill=""],[mask*="streaming"])) {--Status:#9147ff}
 
@@ -92,18 +92,18 @@
 
 			/* Les autres */
 		/** Récupération du statut **/
-		.dm__972a0>div:not(:has(.subtext__972a0)),						/* Colonne des conversations (groupes et bot système exclus) : "name__20a53" et "truncated_c9d15c" */
-		.userInfo__0a06e:has(rect),													/* Liste des amis : "info_f4bc97" et "truncated_c9d15c" */
-		.header__00943,																/* Colonne des activités des amis : "textContent__00943" */
-		.memberItem__5017b:has(rect),												/* Détails d'activité d'amis (soi-même exclu) : "info_f4bc97" */
-		.children__9293f:has(rect[fill]),											/* En-tête des conversations : "title__9293f et nicknames__488b1" */
-		.user-profile-popout>div:not(:has([aria-label="discord"])),								/* Aperçu de profil et Nitro : "usernameRow__63ed3", "info_f4bc97" et "userTag__63ed3" */
-		.row__89036,																	/* Liste d'amis en commun : "info_f4bc97" et "truncated_c9d15c" */
-		.profile__9c3be,.user-profile-modal>div,										/* Profil complet (membres, bots) : "usernameRow__63ed3", "info_f4bc97" et "userTag__63ed3" */
-		.userInfo__1fed1,															/* Paramètres utilisateur - Mon compte : "info_f4bc97" */
-		.avatarWrapper__37e49,														/* Zone utilisateur : "title_b6c092", "hovered__0263c" et "truncated_c9d15c" */
+		.dm__972a0>div:not(:has(.subtext__972a0)),																	/* Colonne des conversations (groupes et bot système exclus) : "name__20a53" et "truncated_c9d15c" */
+		.userInfo__0a06e:has(rect),																					/* Liste des amis : "info_f4bc97" et "truncated_c9d15c" */
+		.header__00943,																								/* Colonne des activités des amis : "textContent__00943" */
+		.memberItem__5017b:has(rect),																				/* Détails d'activité d'amis (soi-même exclu) : "info_f4bc97" */
+		.children__9293f:has(rect[fill]),																			/* En-tête des conversations : "title__9293f et nicknames__488b1" */
+		.user-profile-popout>div:not(:has([aria-label="discord"])),													/* Aperçu de profil et Nitro : "usernameRow__63ed3", "info_f4bc97" et "userTag__63ed3" */
+		.row__89036,																								/* Liste d'amis en commun : "info_f4bc97" et "truncated_c9d15c" */
+		.profile__9c3be,.user-profile-modal>div,																	/* Profil complet (membres, bots) : "usernameRow__63ed3", "info_f4bc97" et "userTag__63ed3" */
+		.userInfo__1fed1,																							/* Paramètres utilisateur - Mon compte : "info_f4bc97" */
+		.accountPopoutButtonWrapper__37e49,																			/* Zone utilisateur : "title_b6c092", "hovered__0263c" et "truncated_c9d15c" */
 
-		.member__5d473:has(rect)														/* Colonne des membres de groupe et de serveur : "childContainer__91a9d", "wrapper__44b0c" et "truncated_c9d15c" */
+		.member__5d473:has(rect)																					/* Colonne des membres de groupe et de serveur : "childContainer__91a9d", "wrapper__44b0c" et "truncated_c9d15c" */
 		{
 			&:has(rect:is([fill="#43a25a"],[fill="#45a366"],[mask*="online"])) {--Status:#43a25a}
 			&:has(rect:is([fill="#ca9654"],[fill="#ffc04e"],[mask*="idle"])) {--Status:#ca9654}
@@ -132,9 +132,9 @@
 			}
 
 			/** Ajout d'une aura autour de l'avatar **/
-			:is(.channel__972a0,														/* Colonne des conversations */
-			.container__37e49,														/* Zone utilisateur */
-			.members_c8ffbb) &														/* Colonne des membres de groupe et de serveur */
+			:is(.channel__972a0,																					/* Colonne des conversations */
+			.container__37e49,																						/* Zone utilisateur */
+			.members_c8ffbb) &																						/* Colonne des membres de groupe et de serveur */
 			{
 				.wrapper__44b0c
 				{
