@@ -28,6 +28,6 @@
 
 	/* Pour un survol sur la colonne des serveurs et les en-têtes des colonnes de conversations privées & salons */
 		&:has(.guilds__5e434:hover),
-		&:has(.sidebarList__5e434>nav>:first-child:hover) {--SidebarWidth:var(--custom-guild-list-width)}
+		&:has(.sidebarList__5e434>*>:first-child:hover) {--SidebarWidth:var(--custom-guild-list-width)}
 	}
 }
