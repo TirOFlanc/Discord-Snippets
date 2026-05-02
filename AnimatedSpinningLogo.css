@@ -2,8 +2,9 @@
 	.childWrapperNoHoverBg__6e9f8 {
 		background:transparent;
 		border-radius:50%;
+		overflow:hidden;
 
-		&:hover >svg {animation:spin-rebound 2s cubic-bezier(.75,0,.25,1) .3s infinite}
+		&:hover >:is(svg,img) {animation:spin-rebound 2s cubic-bezier(.75, 0, .25, 1) .3s infinite}
 	}
 }
 
