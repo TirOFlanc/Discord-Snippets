@@ -1,10 +1,9 @@
 .visual-refresh {
 	.sidebar__5e434 {
-		:is(.listItem__650eb:has(.lowerBadge_cc5dd2,[style*="height: 8px"])) .wrapper_cc5dd2,	/* Avatars de contacts et de serveurs */
-		:is([aria-label*="non lu"],[aria-label*="mention"]):not(:hover)															/* DMs, salons textuels et vocaux et fils de forum */
-		{
-			animation:shaker .75s linear .05s infinite
-		}
+		/* Colonne des serveurs */
+		:is(.listItem__650eb:has(.lowerBadge_cc5dd2,[style*="height: 8px"]) .wrapper_cc5dd2,
+		/* Colonne des conversations privées & salons */
+		.content_d125d2 :is([aria-label*="non lu"],[aria-label*="mention"])):not(:hover) {animation:shaker 1s linear .1s infinite}
 	}
 }
 
