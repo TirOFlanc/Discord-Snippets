@@ -13,7 +13,7 @@
 		--_MemberlistTransition:var(--MemberlistCollapse);
 		transition:var(--_MemberlistTransition);
 		width:var(--custom-member-list-width);
-		contain:layout paint size;
+		contain:layout paint;
 		isolation:isolate;
 
 		.members_c8ffbb {
