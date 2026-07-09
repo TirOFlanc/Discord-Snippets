@@ -10,7 +10,8 @@
 	.sidebar__5e434 {
 		--_SidebarWidth:calc(var(--custom-guild-sidebar-width) - var(--SidebarWidth) - 1px);
 		--_SidebarTransition:var(--SidebarCollapse);
-		isolation:isolate;
+
+		.content_d125d2 {height:auto!important}
 
 		.guilds__5e434,
 		.sidebarList__5e434,
