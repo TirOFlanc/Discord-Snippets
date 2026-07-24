@@ -1,0 +1,116 @@
+:root {
+	--MemberlistWidthCollapse:	64px;
+	--MemberlistWidthExpand:	310px;
+	--MemberlistCollapse:		.3s ease-in-out;
+	--MemberlistExpand:			.2s ease-in-out;
+}
+
+.visual-refresh {
+	.membersWrap_c8ffbb {
+		--custom-member-list-width:var(--MemberlistWidthCollapse);
+		--_MemberlistTransition:width var(--MemberlistCollapse);
+		transition:var(--_MemberlistTransition);
+		width:var(--custom-member-list-width);
+		min-width:0;
+
+		.members_c8ffbb {
+			width:100%;
+
+			.container__0f2e8,
+			.member__5d473 {max-width:unset}
+
+			.membersGroup_c8ffbb {
+				.headerContainer__095fe {
+					cursor:auto;
+
+					&>[role="button"] {cursor:pointer}
+
+					.headerSpacer__095fe,
+					.toggleExpandIcon__095fe {display:none}
+				}
+
+				&:not(:has(*)),
+				&>:last-child {display:flex;justify-content:center}
+
+				&:has(.headerContainer__095fe) {									/* Catégorie des Activités */
+					transition:	padding-block .2s,
+								max-height .2s,
+								opacity .2s;
+					padding-block:0;
+					max-height:0;
+					opacity:0;
+
+					&:hover {
+						padding-block:15px;
+						max-height:42px;
+						opacity:1;
+					}
+				}
+
+				&:not(:has(.headerContainer__095fe)) {								/* Catégorie des Membres */
+					background-image:
+						linear-gradient(90deg,transparent,transparent),
+						linear-gradient(90deg,transparent,var(--channels-default),transparent);
+					background-size:100% 1px;
+					background-position:0 0,0 100%;
+					background-repeat:no-repeat;
+					transform:translateY(-5px);
+					pointer-events:none;
+
+					--_MemberlistTransition:padding-block var(--MemberlistCollapse),
+											max-height var(--MemberlistCollapse),
+											opacity var(--MemberlistCollapse);
+					transition:var(--_MemberlistTransition);
+					overflow:hidden;
+					padding-block:0;
+					max-height:0;
+					opacity:0;
+				}
+			}
+
+			.inviteToGroupButton_c8ffbb,
+			div:not([class],[style]),												/* Cartes d'Activités */
+			div[class*="offline"] {													/* Membres Hors ligne */
+				--_MemberlistTransition:padding-block var(--MemberlistCollapse),
+										max-height var(--MemberlistCollapse);
+				transition:var(--_MemberlistTransition);
+				overflow:hidden;
+				padding-block:0;
+				max-height:0;
+			}
+		}
+
+		&:not(:hover) .content_d125d2 {height:auto!important}
+
+		&:hover {
+			--custom-member-list-width:var(--MemberlistWidthExpand);
+			--_MemberlistTransition:width var(--MemberlistExpand);
+
+			.membersGroup_c8ffbb {
+				&:not(:has(.headerContainer__095fe)) {								/* Catégorie des Membres */
+					--_MemberlistTransition:padding-block var(--MemberlistExpand),
+											max-height var(--MemberlistExpand),
+											opacity var(--MemberlistExpand);
+					padding-block:var(--space-lg) var(--space-xxs);
+					max-height:42px;
+					opacity:1;
+				}
+			}
+
+			.inviteToGroupButton_c8ffbb {max-height:42px}
+
+			div:not([class],[style]) {												/* Cartes d'Activités */
+				--_MemberlistTransition:max-height var(--MemberlistExpand);
+				max-height:78px;
+			}
+
+			.inviteToGroupButton_c8ffbb,
+			div[class*="offline"] {													/* Membres Hors ligne */
+				--_MemberlistTransition:padding-block var(--MemberlistExpand),
+										max-height var(--MemberlistExpand);
+				padding-block:1px;
+				max-height:42px;
+			}
+		}
+	}
+}
