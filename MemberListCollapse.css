@@ -97,8 +97,6 @@
 				}
 			}
 
-			.inviteToGroupButton_c8ffbb {max-height:42px}
-
 			div:not([class],[style]) {												/* Cartes d'Activités */
 				--_MemberlistTransition:max-height var(--MemberlistExpand);
 				max-height:78px;
