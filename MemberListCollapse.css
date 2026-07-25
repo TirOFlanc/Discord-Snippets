@@ -1,16 +1,17 @@
 :root {
 	--MemberlistWidthCollapse:	64px;
 	--MemberlistWidthExpand:	310px;
-	--MemberlistCollapse:		.3s ease-in-out;
-	--MemberlistExpand:			.2s ease-in-out;
+	--MemberlistCollapse:		all .3s ease-in-out;
+	--MemberlistExpand:			all .2s ease-in-out;
 }
 
 .visual-refresh {
 	.membersWrap_c8ffbb {
 		--custom-member-list-width:var(--MemberlistWidthCollapse);
-		--_MemberlistTransition:width var(--MemberlistCollapse);
-		transition:var(--_MemberlistTransition);
+		--_MemberlistTransition:var(--MemberlistCollapse);
 		width:var(--custom-member-list-width);
+		transition:var(--_MemberlistTransition);
+		transition-property:width;
 		min-width:0;
 
 		.members_c8ffbb {
@@ -33,14 +34,15 @@
 				&>:last-child {display:flex;justify-content:center}
 
 				&:has(.headerContainer__095fe) {									/* Catégorie des Activités */
-					transition:	padding-block .2s,
-								max-height .2s,
-								opacity .2s;
+					transition:var(--MemberlistCollapse);
+					transition-property:padding-block,max-height,opacity;
 					padding-block:0;
 					max-height:0;
 					opacity:0;
 
 					&:hover {
+						transition:var(--MemberlistExpand);
+						transition-property:padding-block,max-height,opacity;
 						padding-block:15px;
 						max-height:42px;
 						opacity:1;
@@ -57,10 +59,8 @@
 					transform:translateY(-5px);
 					pointer-events:none;
 
-					--_MemberlistTransition:padding-block var(--MemberlistCollapse),
-											max-height var(--MemberlistCollapse),
-											opacity var(--MemberlistCollapse);
 					transition:var(--_MemberlistTransition);
+					transition-property:padding-block,max-height,opacity;
 					overflow:hidden;
 					padding-block:0;
 					max-height:0;
@@ -71,9 +71,8 @@
 			.inviteToGroupButton_c8ffbb,
 			div:not([class],[style]),												/* Cartes d'Activités */
 			div[class*="offline"] {													/* Membres Hors ligne */
-				--_MemberlistTransition:padding-block var(--MemberlistCollapse),
-										max-height var(--MemberlistCollapse);
 				transition:var(--_MemberlistTransition);
+				transition-property:padding-block,max-height;
 				overflow:hidden;
 				padding-block:0;
 				max-height:0;
@@ -84,13 +83,10 @@
 
 		&:hover {
 			--custom-member-list-width:var(--MemberlistWidthExpand);
-			--_MemberlistTransition:width var(--MemberlistExpand);
+			--_MemberlistTransition:var(--MemberlistExpand);
 
 			.membersGroup_c8ffbb {
 				&:not(:has(.headerContainer__095fe)) {								/* Catégorie des Membres */
-					--_MemberlistTransition:padding-block var(--MemberlistExpand),
-											max-height var(--MemberlistExpand),
-											opacity var(--MemberlistExpand);
 					padding-block:var(--space-lg) var(--space-xxs);
 					max-height:42px;
 					opacity:1;
@@ -98,14 +94,11 @@
 			}
 
 			div:not([class],[style]) {												/* Cartes d'Activités */
-				--_MemberlistTransition:max-height var(--MemberlistExpand);
 				max-height:78px;
 			}
 
 			.inviteToGroupButton_c8ffbb,
 			div[class*="offline"] {													/* Membres Hors ligne */
-				--_MemberlistTransition:padding-block var(--MemberlistExpand),
-										max-height var(--MemberlistExpand);
 				padding-block:1px;
 				max-height:42px;
 			}
