@@ -11,16 +11,16 @@
 		--_SidebarWidth:calc(var(--custom-guild-sidebar-width) - var(--SidebarWidth) - 1px);
 		--_SidebarTransition:var(--SidebarCollapse);
 
-		.content_d125d2 {height:auto!important}
+		.guilds__5e434 {width:var(--SidebarWidth)}
+
+		.sidebarList__5e434,
+		.bannerImg_f37cb1 {width:var(--_SidebarWidth)}
 
 		.guilds__5e434,
 		.sidebarList__5e434,
 		.bannerImg_f37cb1 {transition:var(--_SidebarTransition)}
 
-		.guilds__5e434 {width:var(--SidebarWidth)}
-
-		.sidebarList__5e434,
-		.bannerImg_f37cb1 {width:var(--_SidebarWidth)}
+		&:not(:hover) .content_d125d2 {height:auto!important}
 
 		&:hover {--_SidebarTransition:var(--SidebarExpand)}
 
