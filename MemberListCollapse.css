@@ -1,3 +1,5 @@
+@import url(https://TirOFlanc.github.io/Discord-Snippets/UnobtrusiveTooltipInteraction.css);
+
 :root {
 	--MemberlistWidthCollapse:	64px;
 	--MemberlistWidthExpand:	310px;
@@ -15,6 +17,9 @@
 		min-width:0;
 
 		.members_c8ffbb {
+			transition:var(--_MemberlistTransition);
+			transition-property:padding-top;
+			padding-top:7px;
 			width:100%;
 
 			.container__0f2e8,
@@ -85,22 +90,24 @@
 			--custom-member-list-width:var(--MemberlistWidthExpand);
 			--_MemberlistTransition:var(--MemberlistExpand);
 
-			.membersGroup_c8ffbb {
-				&:not(:has(.headerContainer__095fe)) {								/* Catégorie des Membres */
-					padding-block:var(--space-lg) var(--space-xxs);
-					max-height:42px;
-					opacity:1;
+			.members_c8ffbb {
+				padding-top:0;
+
+				.membersGroup_c8ffbb {
+					&:not(:has(.headerContainer__095fe)) {								/* Catégorie des Membres */
+						padding-block:var(--space-lg) var(--space-xxs);
+						max-height:42px;
+						opacity:1;
+					}
 				}
-			}
 
-			div:not([class],[style]) {												/* Cartes d'Activités */
-				max-height:78px;
-			}
+				div:not([class],[style]) {max-height:78px}								/* Cartes d'Activités */
 
-			.inviteToGroupButton_c8ffbb,
-			div[class*="offline"] {													/* Membres Hors ligne */
-				padding-block:1px;
-				max-height:42px;
+				.inviteToGroupButton_c8ffbb,
+				div[class*="offline"] {													/* Membres Hors ligne */
+					padding-block:1px;
+					max-height:42px;
+				}
 			}
 		}
 	}
