@@ -2,7 +2,7 @@
 
 :root {
 	--SidebarWidth:		1px;
-	--SidebarExpand:	width .15s ease-in-out;
+	--SidebarExpand:	width .2s ease-in-out;
 	--SidebarCollapse:	width .3s ease-in-out
 }
 
