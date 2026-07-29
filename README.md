@@ -114,9 +114,9 @@ https://simpleicons.org/
 
 <details>
   <summary>
-    <b>Members List Collapse</b><br>
+    <b>Member List Collapse</b><br>
     <a href="https://github.com/TirOFlanc/Discord-Snippets/blob/main/MemberListCollapse.css">
-      <img src="https://img.shields.io/github/last-commit/TirOFlanc/Discord-Snippets?path=MembersListCollapse.css&style=plastic&labelColor=181818&cacheSeconds=3600"></a>
+      <img src="https://img.shields.io/github/last-commit/TirOFlanc/Discord-Snippets?path=MemberListCollapse.css&style=plastic&labelColor=181818&cacheSeconds=3600"></a>
   </summary>
 
   ```CSS
@@ -232,7 +232,7 @@ https://simpleicons.org/
   @import url(https://TirOFlanc.github.io/Discord-Snippets/AnimatedSpinningLogo.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/ColorizedStatusIndicator.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/InputBarButtons.css);
-  @import url(https://TirOFlanc.github.io/Discord-Snippets/MembersListCollapse.css);
+  @import url(https://TirOFlanc.github.io/Discord-Snippets/MemberListCollapse.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/NiftyFontPlay.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/RefreshTitleBar.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/SideBarCollapse.css);
