@@ -186,7 +186,7 @@ https://simpleicons.org/
   @import url(https://TirOFlanc.github.io/Discord-Snippets/UnobtrusiveTooltipInteraction.css);
   ```
   ><sup><sup>
-    ℹ️ Utilisée dans <b>MembersListCollapse</b> et <b>SideBarCollapse</b> pour éviter la perte de focus en survolant les infobulles
+    ℹ️ Utilisée dans <b>MemberListCollapse</b> et <b>SideBarCollapse</b> pour éviter la perte de focus en survolant les infobulles
   </sup></sup>
 </details>
 
