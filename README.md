@@ -120,7 +120,7 @@ https://simpleicons.org/
   </summary>
 
   ```CSS
-  @import url(https://TirOFlanc.github.io/Discord-Snippets/MembersListCollapse.css);
+  @import url(https://TirOFlanc.github.io/Discord-Snippets/MemberListCollapse.css);
   ```
 </details>
 
