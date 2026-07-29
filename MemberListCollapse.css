@@ -26,6 +26,9 @@
 			.member__5d473 {max-width:unset}
 
 			.membersGroup_c8ffbb {
+				display:flex;
+				justify-content:center;
+
 				.headerContainer__095fe {
 					cursor:auto;
 
@@ -34,9 +37,6 @@
 					.headerSpacer__095fe,
 					.toggleExpandIcon__095fe {display:none}
 				}
-
-				&:not(:has(*)),
-				&>:last-child {display:flex;justify-content:center}
 
 				&:has(.headerContainer__095fe) {									/* Catégorie des Activités */
 					transition:var(--MemberlistCollapse);
