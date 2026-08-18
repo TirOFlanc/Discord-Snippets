@@ -163,6 +163,20 @@ https://simpleicons.org/
 
 <details>
   <summary>
+    <b>Server Activity Hider</b><br>
+    <a href="https://github.com/TirOFlanc/Discord-Snippets/blob/main/ServerActivityHider.css">
+      <img src="https://img.shields.io/github/last-commit/TirOFlanc/Discord-Snippets?path=ServerActivityHider.css&style=plastic&labelColor=181818&cacheSeconds=3600"></a>
+  </summary>
+
+  ```CSS
+  @import url(https://TirOFlanc.github.io/Discord-Snippets/ServerActivityHider.css);
+  ```
+</details>
+
+#
+
+<details>
+  <summary>
     <b>Side Bar Collapse</b><br>
     <a href="https://github.com/TirOFlanc/Discord-Snippets/blob/main/SideBarCollapse.css">
       <img src="https://img.shields.io/github/last-commit/TirOFlanc/Discord-Snippets?path=SideBarCollapse.css&style=plastic&labelColor=181818&cacheSeconds=3600"></a>
@@ -236,6 +250,7 @@ https://simpleicons.org/
   @import url(https://TirOFlanc.github.io/Discord-Snippets/NiftyFontPlay.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/RefreshTitleBar.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/SideBarCollapse.css);
+  @import url(https://TirOFlanc.github.io/Discord-Snippets/ServerActivityHider.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/UnreadMessagesShaker.css);
   @import url(https://TirOFlanc.github.io/Discord-Snippets/VisualVoiceIndicator.css);
   ```
