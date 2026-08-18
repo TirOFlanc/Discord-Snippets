@@ -1,0 +1,6 @@
+.visual-refresh {
+	.membersGroup_c8ffbb {
+		&:has(.headerContainer__095fe),
+		~div:not([class]) {display:none!important}
+	}
+}
