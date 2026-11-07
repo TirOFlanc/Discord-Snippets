@@ -1,7 +1,7 @@
 .visual-refresh {
 	#popover-portal {
-		&+.layerContainer__59d0d {
-			.clickTrapContainer__59d0d {
+		&+.layerContainer_VVADeK {
+			.clickTrapContainer_VVADeK {
 				&:has([class*="tooltip"],[role="tooltip"]):not(:has([role="dialog"])) {
 					& * {pointer-events:none}
 				}
