@@ -1,9 +1,9 @@
 .visual-refresh {
-	.sidebar__5e434 {
+	.sidebar_pog62O {
 		/* Colonne des serveurs */
-		:is(.listItem__650eb:has(.lowerBadge_cc5dd2,[style*="height: 8px"]) .wrapper_cc5dd2,
+		:is(.listItem_rwEpIL:has(.lowerBadge_hqZPsU,[style*="height: 8px"]) .wrapper_hqZPsU,
 		/* Colonne des conversations privées & salons */
-		.content_d125d2 :is([aria-label*="non lu"],[aria-label*="mention"])):not(:hover) {animation:shaker 1s linear .1s infinite}
+		.content_tqapBM :is([aria-label*="non lu"],[aria-label*="mention"])):not(:hover) {animation:shaker 1s linear .1s infinite}
 	}
 }
 
