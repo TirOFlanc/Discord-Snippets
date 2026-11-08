@@ -6,31 +6,31 @@
 	#app-mount {
 
 	/*** Estompage des utilisateurs supprimés de la colonne des conversations privées ***/
-		.dm__972a0:has([aria-label*="deleted_user"]):not(:has([class*="selected"]),:hover) {opacity:.25}
+		.dm_zln_tS:has([aria-label*="deleted_user"]):not(:has([class*="selected"]),:hover) {opacity:.25}
 
 	/** Suppression du statut en texte sous les pseudos de la liste des amis **/
-		.text__19b6d {display:none}
+		.text_CXmngM {display:none}
 
 	/*** Ajustement de la barre de défilement de la colonne des membres ***/
-		.members_c8ffbb::-webkit-scrollbar {width:6px}
+		.members_86es0b::-webkit-scrollbar {width:6px}
 
 	/*** Suppression de l'indicateur de statut par défaut ***/
-		.wrapper__44b0c,
-		.container__1ce5d {
+		.wrapper_XpIUHy,
+		.container_pfDcF- {
 			rect,circle,&>div,
-			.status_a423bd {display:none}
+			.status_PlwcO5 {display:none}
 
 			[mask] {mask:none}
 
-			.mask__44b0c .avatar__44b0c,
+			.mask_XpIUHy .avatar_XpIUHy,
 			& :is([src*="avatars"],[src*="assets"]) {
 				border-radius:50%
 			}
 		}
 
 	/*** Remplacement de l'indicateur de frappe ***/
-		[class*="layout"]:has(.dots__5ad89) {
-			& :is([src*="avatars"],[src*="channel-icon"],[src*="assets"],[class*="emoji"],.badge__10651,path) {
+		[class*="layout"]:has(.dots_C1dbpS) {
+			& :is([src*="avatars"],[src*="channel-icon"],[src*="assets"],[class*="emoji"],.badge_k8jyN7,path) {
 				will-change:transform;
 				transform-origin:50% 50%;
 				animation:rotate 1.25s infinite linear
@@ -44,19 +44,19 @@
 		}
 
 	/*** Colorisation des groupes et du bot système ***/
-		.notAppAsidePanel_a3002d {
-			.dm__972a0:has(.subtext__972a0) .name__20a53>div,														/* Colonne des conversations (groupes et bot système) */
-			.children__9293f:not(:has(rect,[class*="tab"]))															/* En-tête des conversations */
+		.notAppAsidePanel_YRXZu0 {
+			.dm_zln_tS:has(.subtext_zln_tS) .name_TBNqol>div,														/* Colonne des conversations (groupes et bot système) */
+			.children_ybUK7Z:not(:has(rect,[class*="tab"]))															/* En-tête des conversations */
 			:is(span>div>div:nth-child(2),div>h1>span:first-child),													/* ... Groupe / Bot système */
 			[class*="user-profile"]>div:has([aria-label="discord"])													/* Aperçu de profil et profil complet (bot système) */
-			:is(.nickname__63ed3,.username__05e81)																	/* ... Nom / Description */
+			:is(.nickname__63ed3,.username_Lj8I29)																	/* ... Nom / Description */
 			{color:var(--Groulor)!important}
 			
-			.dm__972a0:has(.subtext__972a0) 
+			.dm_zln_tS:has(.subtext_zln_tS) 
 			{
-				&:has(.status_a423bd,[mask*="typing"],rect)															/* Groupe avec deux avatars : ".status_a423bd,[mask*="typing"]" / groupe avec image personnalisée : "rect" */
+				&:has(.status_PlwcO5,[mask*="typing"],rect)															/* Groupe avec deux avatars : ".status_PlwcO5,[mask*="typing"]" / groupe avec image personnalisée : "rect" */
 				{
-					:is(.wrapper__44b0c,.container__1ce5d)::before {
+					:is(.wrapper_XpIUHy,.container_pfDcF-)::before {
 						top:-5%;
 						left:-5%;
 						height:110%;
@@ -74,16 +74,16 @@
 	/*** Remplacement de l'indicateur de statut ***/
 			/* Cas particulier */
 		/** Récupération du statut **/
-		.user-profile-sidebar>div>div:not(:has([aria-label="discord"]))												/* Colonne d'aperçu de profil de conversation privée : "usernameRow__63ed3" et "userTag__63ed3" */
+		.user-profile-sidebar>div>div:not(:has([aria-label="discord"]))												/* Colonne d'aperçu de profil de conversation privée : "usernameRow__63ed3" et "userTag_C2XpHA" */
 		{
-			&:has(.header__7f9c0 rect:is([fill="#43a25a"],[fill="#45a366"],[mask*="online"])) {--Status:#43a25a}
-			&:has(.header__7f9c0 rect:is([fill="#ca9654"],[fill="#ffc04e"],[mask*="idle"])) {--Status:#ca9654}		/* Problème lorsque l'on déplie les amis en commun */
-			&:has(.header__7f9c0 rect:is([fill="#d83a42"],[fill="#da3e44"],[mask*="dnd"])) {--Status:#d83a42}		/* Le parent du statut et du pseudo a aussi pour fils les amis en commun */
-			&:has(.header__7f9c0 rect:is([fill="#82838b"],[fill="#84858d"],[mask*="offline"])) {--Status:#82838b}
-			&:has(.header__7f9c0 rect:is([fill="#9147ff"],[fill=""],[mask*="streaming"])) {--Status:#9147ff}
+			&:has(.header_S_xUx6 rect:is([fill="#43a25a"],[fill="#45a366"],[mask*="online"])) {--Status:#43a25a}
+			&:has(.header_S_xUx6 rect:is([fill="#ca9654"],[fill="#ffc04e"],[mask*="idle"])) {--Status:#ca9654}		/* Problème lorsque l'on déplie les amis en commun */
+			&:has(.header_S_xUx6 rect:is([fill="#d83a42"],[fill="#da3e44"],[mask*="dnd"])) {--Status:#d83a42}		/* Le parent du statut et du pseudo a aussi pour fils les amis en commun */
+			&:has(.header_S_xUx6 rect:is([fill="#82838b"],[fill="#84858d"],[mask*="offline"])) {--Status:#82838b}
+			&:has(.header_S_xUx6 rect:is([fill="#9147ff"],[fill=""],[mask*="streaming"])) {--Status:#9147ff}
 
 			/** Coloration selon le statut **/
-			.usernameRow__63ed3 .defaultColor__4bd52,.userTag__63ed3>span
+			.usernameRow__63ed3 .defaultColor_MMUIw6,.userTag_C2XpHA>span
 			{
 				color:var(--Status,transparent);
 				transition:color 1.5s
@@ -92,18 +92,18 @@
 
 			/* Les autres */
 		/** Récupération du statut **/
-		.dm__972a0>div:not(:has(.subtext__972a0)),																	/* Colonne des conversations (groupes et bot système exclus) : "name__20a53" et "truncated_c9d15c" */
-		.userInfo__0a06e:has(rect),																					/* Liste des amis : "info_f4bc97" et "truncated_c9d15c" */
-		.header__00943,																								/* Colonne des activités des amis : "textContent__00943" */
-		.memberItem__5017b:has(rect),																				/* Détails d'activité d'amis (soi-même exclu) : "info_f4bc97" */
-		.children__9293f:has(rect[fill]),																			/* En-tête des conversations : "title__9293f et nicknames__488b1" */
-		.user-profile-popout>div:not(:has([aria-label="discord"])),													/* Aperçu de profil et Nitro : "usernameRow__63ed3", "info_f4bc97" et "userTag__63ed3" */
-		.row__89036,																								/* Liste d'amis en commun : "info_f4bc97" et "truncated_c9d15c" */
-		.profile__9c3be,.user-profile-modal>div,																	/* Profil complet (membres, bots) : "usernameRow__63ed3", "info_f4bc97" et "userTag__63ed3" */
-		.userInfo__1fed1,																							/* Paramètres utilisateur - Mon compte : "info_f4bc97" */
-		.accountPopoutButtonWrapper__37e49,																			/* Zone utilisateur : "title_b6c092", "hovered__0263c" et "truncated_c9d15c" */
+		.dm_zln_tS>div:not(:has(.subtext_zln_tS)),																	/* Colonne des conversations (groupes et bot système exclus) : "name_TBNqol" et "truncated_HigqCD" */
+		.userInfo_jPuNMC:has(rect),																					/* Liste des amis : "info_PTA1Mz" et "truncated_HigqCD" */
+		.header_o3hXTo,																								/* Colonne des activités des amis : "textContent_o3hXTo" */
+		.memberItem_SISQ-M:has(rect),																				/* Détails d'activité d'amis (soi-même exclu) : "info_PTA1Mz" */
+		.children_ybUK7Z:has(rect[fill]),																			/* En-tête des conversations : "title_ybUK7Z et nicknames__488b1" */
+		.user-profile-popout>div:not(:has([aria-label="discord"])),													/* Aperçu de profil et Nitro : "usernameRow__63ed3", "info_PTA1Mz" et "userTag_C2XpHA" */
+		.row__Bgzj0,																								/* Liste d'amis en commun : "info_PTA1Mz" et "truncated_HigqCD" */
+		.profile_s3DB6Y,.user-profile-modal>div,																	/* Profil complet (membres, bots) : "usernameRow__63ed3", "info_PTA1Mz" et "userTag_C2XpHA" */
+		.userInfo__1fed1,																							/* Paramètres utilisateur - Mon compte : "info_PTA1Mz" */
+		.accountPopoutButtonWrapper_g6VwXp,																			/* Zone utilisateur : "title_1hp6hz", "hovered_Dq3ch1" et "truncated_HigqCD" */
 
-		.member__5d473:has(rect)																					/* Colonne des membres de groupe et de serveur : "childContainer__91a9d", "wrapper__44b0c" et "truncated_c9d15c" */
+		.member_Iy0c7A:has(rect)																					/* Colonne des membres de groupe et de serveur : "childContainer_J1Adu_", "wrapper_XpIUHy" et "truncated_HigqCD" */
 		{
 			&:has(rect:is([fill="#43a25a"],[fill="#45a366"],[mask*="online"])) {--Status:#43a25a}
 			&:has(rect:is([fill="#ca9654"],[fill="#ffc04e"],[mask*="idle"])) {--Status:#ca9654}
@@ -112,31 +112,31 @@
 			&:has(rect:is([fill="#9147ff"],[fill=""],[mask*="streaming"])) {--Status:#9147ff}
 
 			/** Coloration selon le statut **/
-			.name__20a53,.truncated_c9d15c:not(.dot_c9d15c),
-			.info_f4bc97>span:first-child,
-			.textContent__00943:first-child>:first-child,
-			.textContent__00943:first-child:not(:has(*)),
-			.title__9293f>span,.nicknames__488b1>span>span,
-			.usernameRow__63ed3 .defaultColor__4bd52,.userTag__63ed3>span,
-			.title_b6c092,.hovered__0263c
+			.name_TBNqol,.truncated_HigqCD:not(.dot_HigqCD),
+			.info_PTA1Mz>span:first-child,
+			.textContent_o3hXTo:first-child>:first-child,
+			.textContent_o3hXTo:first-child:not(:has(*)),
+			.title_ybUK7Z>span,.nicknames__488b1>span>span,
+			.usernameRow__63ed3 .defaultColor_MMUIw6,.userTag_C2XpHA>span,
+			.title_1hp6hz,.hovered_Dq3ch1
 			{
 				color:var(--Status,transparent);
 				transition:color 1.5s
 			}
 
 			/** Ajout d'un liseré à gauche et à droite des membres selon leur statut **/
-			.childContainer__91a9d
+			.childContainer_J1Adu_
 			{
 				box-shadow:-2px 0 0 0 var(--Status,transparent),2px 0 0 0 var(--Status,transparent);
 				transition:box-shadow 1.5s
 			}
 
 			/** Ajout d'une aura autour de l'avatar **/
-			:is(.channel__972a0,																					/* Colonne des conversations */
-			.container__37e49,																						/* Zone utilisateur */
-			.members_c8ffbb) &																						/* Colonne des membres de groupe et de serveur */
+			:is(.channel_zln_tS,																					/* Colonne des conversations */
+			.container_g6VwXp,																						/* Zone utilisateur */
+			.members_86es0b) &																						/* Colonne des membres de groupe et de serveur */
 			{
-				.wrapper__44b0c
+				.wrapper_XpIUHy
 				{
 					box-shadow:0 0 5px 2px var(--Status,transparent);
 					transition:box-shadow 1.5s

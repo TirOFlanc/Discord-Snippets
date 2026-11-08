@@ -8,7 +8,7 @@
 }
 
 .visual-refresh {
-	.membersWrap_c8ffbb {
+	.membersWrap_86es0b {
 		--custom-member-list-width:var(--MemberlistWidthCollapse);
 		--_MemberlistTransition:var(--MemberlistCollapse);
 		width:var(--custom-member-list-width);
@@ -16,16 +16,16 @@
 		transition-property:width;
 		min-width:0;
 
-		.members_c8ffbb {
+		.members_86es0b {
 			transition:var(--_MemberlistTransition);
 			transition-property:padding-top;
 			padding-top:7px;
 			width:100%;
 
-			.container__0f2e8,
-			.member__5d473 {max-width:unset}
+			.container_g7esM5,
+			.member_Iy0c7A {max-width:unset}
 
-			.membersGroup_c8ffbb {
+			.membersGroup_86es0b {
 				display:flex;
 				justify-content:center;
 
@@ -73,7 +73,7 @@
 				}
 			}
 
-			.inviteToGroupButton_c8ffbb,
+			.inviteToGroupButton_86es0b,
 			div:not([class],[style]),												/* Cartes d'Activités */
 			div[class*="offline"] {													/* Membres Hors ligne */
 				transition:var(--_MemberlistTransition);
@@ -84,16 +84,16 @@
 			}
 		}
 
-		&:not(:hover) .content_d125d2 {height:auto!important}
+		&:not(:hover) .content_tqapBM {height:auto!important}
 
 		&:hover {
 			--custom-member-list-width:var(--MemberlistWidthExpand);
 			--_MemberlistTransition:var(--MemberlistExpand);
 
-			.members_c8ffbb {
+			.members_86es0b {
 				padding-top:0;
 
-				.membersGroup_c8ffbb {
+				.membersGroup_86es0b {
 					&:not(:has(.headerContainer__095fe)) {								/* Catégorie des Membres */
 						padding-block:var(--space-lg) var(--space-xxs);
 						max-height:42px;
@@ -103,7 +103,7 @@
 
 				div:not([class],[style]) {max-height:78px}								/* Cartes d'Activités */
 
-				.inviteToGroupButton_c8ffbb,
+				.inviteToGroupButton_86es0b,
 				div[class*="offline"] {													/* Membres Hors ligne */
 					padding-block:1px;
 					max-height:42px;
