@@ -1,0 +1,39 @@
+name: UpdateDiscordClassNames
+
+on:
+  schedule:
+    - cron: '0 6 * * *'                   # Tous les jours à 6h (UTC)
+  workflow_dispatch:                      # Lancement manuel depuis l'onglet Actions
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # Remplace les classes périmées et ouvre une pull request seulement s'il y a eu un vrai changement
+      - name: Vérification de mise à jour des noms de classe Discord
+        uses: TirOFlanc/Discord-Class-Updater@main
+        with:
+          files: "*.css"
+          ignores: "BetterCssEditor.css,NiftyFontPlay.css,RefreshTitleBar.css"
+          ignore-class-names: |
+            visual-refresh
+            user-profile-sidebar
+            user-profile-popout
+            user-profile-modal
+            BetterDiscord
+            Powercord
+            Replugged
+            Aliucord
+            Vencord
+            bd-
+            rp-
+            ac-
+            vc-
+          branch: updates
+          title: "🔄 Mise à jour des classes Discord à vérifier"
