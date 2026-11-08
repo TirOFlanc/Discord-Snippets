@@ -7,20 +7,20 @@
 }
 
 .visual-refresh {
-	.sidebar__5e434 {
+	.sidebar_pog62O {
 		--_SidebarWidth:calc(var(--custom-guild-sidebar-width) - var(--SidebarWidth) - 1px);
 		--_SidebarTransition:var(--SidebarCollapse);
 
-		.guilds__5e434 {width:var(--SidebarWidth)}
+		.guilds_pog62O {width:var(--SidebarWidth)}
 
-		.sidebarList__5e434,
-		.bannerImg_f37cb1 {width:var(--_SidebarWidth)}
+		.sidebarList_pog62O,
+		.bannerImg_XH4OpX {width:var(--_SidebarWidth)}
 
-		.guilds__5e434,
-		.sidebarList__5e434,
-		.bannerImg_f37cb1 {transition:var(--_SidebarTransition)}
+		.guilds_pog62O,
+		.sidebarList_pog62O,
+		.bannerImg_XH4OpX {transition:var(--_SidebarTransition)}
 
-		&:not(:hover) .content_d125d2 {height:auto!important}
+		&:not(:hover) .content_tqapBM {height:auto!important}
 
 		&:hover {--_SidebarTransition:var(--SidebarExpand)}
 
@@ -28,7 +28,7 @@
 		/* &:has(>:nth-child(-n+2):hover) {--SidebarWidth:var(--custom-guild-list-width)} */
 
 	/* Pour un survol sur la colonne des serveurs et les en-têtes des colonnes de conversations privées & salons */
-		&:has(.guilds__5e434:hover),
-		&:has(.sidebarList__5e434>*>:first-child:hover) {--SidebarWidth:var(--custom-guild-list-width)}
+		&:has(.guilds_pog62O:hover),
+		&:has(.sidebarList_pog62O>*>:first-child:hover) {--SidebarWidth:var(--custom-guild-list-width)}
 	}
 }

@@ -5,7 +5,7 @@
 }
 
 .visual-refresh {
-	.scrollableContainer__74017 {
+	.scrollableContainer_2x8-Qn {
 		&::-webkit-scrollbar {display:none}
 
 		&>div {
@@ -16,10 +16,10 @@
 				height:0
 			}
 
-			.buttons__74017 {
-				&>:not(:has(.emojiButton__74017)) {display:none}
+			.buttons_2x8-Qn {
+				&>:not(:has(.emojiButton_2x8-Qn)) {display:none}
 
-				.emojiButton__74017 {
+				.emojiButton_2x8-Qn {
 					transition:opacity var(--EmojiTransition) ease-in-out,scale var(--EmojiTransition) ease-in-out;
 					opacity:var(--EmojiOpacity);
 					scale:1;
