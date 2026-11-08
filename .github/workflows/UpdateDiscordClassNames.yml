@@ -2,8 +2,8 @@ name: UpdateDiscordClassNames
 
 on:
   schedule:
-    - cron: '0 6 * * *'                   # Tous les jours à 6h (UTC)
-  workflow_dispatch:                      # Lancement manuel depuis l'onglet Actions
+    - cron: '12 3 * * *'                  # Every day at 3:12 (UTC)
+  workflow_dispatch:                      # Manual run from the Actions tab
 
 jobs:
   update:
@@ -15,10 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      # Remplace les classes périmées et ouvre une pull request seulement s'il y a eu un vrai changement
-      - name: Vérification de mise à jour des noms de classe Discord
+      # Replaces outdated classes and opens a pull request only when something really changed
+      - name: Check for Discord class name updates
         uses: TirOFlanc/Discord-Class-Updater@main
         with:
+          language: fr
           files: "*.css"
           ignores: "BetterCssEditor.css,NiftyFontPlay.css,RefreshTitleBar.css"
           ignore-class-names: |
@@ -36,4 +37,3 @@ jobs:
             ac-
             vc-
           branch: updates
-          title: "🔄 Mise à jour des classes Discord à vérifier"
