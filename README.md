@@ -157,8 +157,8 @@ https://simpleicons.org/
   <sup><b>
     Maintained by <a href="https://github.com/G0d0fninjas">G0d0fninjas</a> : <a href="https://github.com/G0d0fninjas/visual-refresh-compact-title-bar">Repo⇗</a>
   </b></sup></sup>
-  <br><sup><sup>(not covered by this repository's MIT license: this file belongs to its authors)</sup></sup>
 </details>
+<sup><sup>(not covered by this repository's MIT license: this file belongs to its authors)</sup></sup>
 
 #
 
